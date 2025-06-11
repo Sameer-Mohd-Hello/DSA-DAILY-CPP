@@ -1,0 +1,10 @@
+# Array Operations in C++
+
+This repo contains basic array operations implemented in C++:
+
+- `insertion.cpp`: Insert element at beginning, middle, end
+- `deletion.cpp`: Delete element from beginning, middle, end
+- `search.cpp`: Linear search in an array
+
+## Author
+MD SAMEER
