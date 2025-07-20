@@ -41,6 +41,21 @@ public:
         }
         temp->next = newnode;
     }
+
+    void insertatbegining(int value)
+    {
+        Node *newnode = new Node(value);
+
+        if (head == NULL)
+        {
+            head = newnode;
+            return;
+        }
+        Node *temp = head;
+        head = newnode;
+        head->next = temp;
+    }
+
     void display()
     {
         Node *temp = head;
@@ -49,7 +64,7 @@ public:
             cout << temp->data << "-> ";
             temp = temp->next;
         }
-        cout << "NULL";
+        cout << "NULL" << endl;
     }
 };
 
@@ -62,5 +77,7 @@ int main()
     list.insertatend(40);
     list.insertatend(50);
     list.insertatend(60);
+    list.display();
+    list.insertatbegining(5);
     list.display();
 }
